@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔹 1. Cafe Name -->
+    <TextView
+        android:id="@+id/textCafeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cafe Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🔹 2. Google Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textCafeName"
+        app:layout_constraintBottom_toTopOf="@id/detailSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🔹 3. Reserved blank space -->
+    <ScrollView
+        android:id="@+id/detailSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomTabComponent"
+        app:layout_constraintTop_toBottomOf="@id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/textCafeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description" />
+
+            <TextView android:id="@+id/textCafeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <TextView android:id="@+id/textCafeGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Games" />
+
+            <TextView android:id="@+id/textCafeFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facilities" />
+
+            <TextView android:id="@+id/textCafePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price" />
+
+            <Button
+                android:id="@+id/buttonFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Favorites"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🔹 4. Bottom navigation tab -->
+    <org.classapp.rollngo.BottomTab
+        android:id="@+id/bottomTabComponent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

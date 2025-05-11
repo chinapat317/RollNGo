@@ -1,0 +1,31 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/editCafeName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Cafe Name" />
+        <EditText android:id="@+id/editAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Address" />
+        <EditText android:id="@+id/editDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Description" />
+        <EditText android:id="@+id/editPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Price (e.g. 50 baht/hr)" />
+        <EditText android:id="@+id/editLatitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Latitude" android:inputType="numberDecimal" />
+        <EditText android:id="@+id/editLongitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Longitude" android:inputType="numberDecimal" />
+        <EditText android:id="@+id/editGames" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Games (comma-separated)" />
+        <EditText android:id="@+id/editFacilities" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Facilities (comma-separated)" />
+
+        <Button
+            android:id="@+id/buttonSubmitCafe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Cafe"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498053913168",
+    "firebase_url": "https://rollngo-ec112-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "rollngo-ec112",
+    "storage_bucket": "rollngo-ec112.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498053913168:android:8644fc159ec2f657decf55",
+        "android_client_info": {
+          "package_name": "org.classapp.rollngo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498053913168-2vttpfslrkq2huohn5sj9lkfu5fqgbt7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.classapp.rollngo",
+            "certificate_hash": "6baa0c7b5aa96929f25b24839f8c86278fc395dc"
+          }
+        },
+        {
+          "client_id": "498053913168-cu9kb61tcg15qif8mpm657j4d9mhs833.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvbdctd0oNc0ELm8DDNLLRvW-Kbbc4rwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498053913168-cu9kb61tcg15qif8mpm657j4d9mhs833.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
